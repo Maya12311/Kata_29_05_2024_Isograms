@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+
+public class isogram {
+    public static boolean  isIsogram(String str) {
+        // ...
+      char[] newPhrase = str.toLowerCase().toCharArray(); 
+      Arrays.sort(newPhrase);
+      
+      for(int i = 0; i<newPhrase.length-1; i++){
+      if(newPhrase[i] == newPhrase[i+1])return false;
+}
+      return true;
+    } 
+}
